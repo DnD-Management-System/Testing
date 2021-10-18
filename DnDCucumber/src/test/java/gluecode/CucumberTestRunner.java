@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
  */
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "features",
+@CucumberOptions(features = "features/dashboardfunctionality.feature",
 glue = "gluecode")
 public class CucumberTestRunner {
 	

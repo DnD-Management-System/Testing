@@ -40,7 +40,7 @@ Feature: All functionality of the dashboard
     	And the player inputs a class
     	And the player inputs a level
     	And the player inputs an alignment
-    		Then the information is stored in the form
+    		Then the basic information is stored in the form
     
     @navBasicToGameplay
     Scenario: Navigate to the gameplay menu
@@ -51,39 +51,89 @@ Feature: All functionality of the dashboard
     @inputGameplay
     Scenario: Input gameplay character information
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
     		And the player inputs an HP
     		And the player inputs an AC
     		And the player inputs a speed
     		And the player inputs a hit dice
-    		And the player inputs a proficiency bonus
-    			Then the information is stored in the form
+    		And the player inputs a proficiency
+    			Then the gameplay information is stored in the form
         
     @navGameplayToBasic
     Scenario: Navigate to the basic menu
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the previous button from gameplay
     			Then the player sees the basic menu 
     
     @navGameplayToAbilities
     Scenario: Navigate to the abilities menu
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     			Then the player sees the abilities menu
     
     @openStrMenu
     Scenario: Click the strength dropdown
     When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the strength dropdown
     			Then the player sees the strength dropdown menu
     @openDexMenu
     Scenario: Click the dexterity dropdown
     When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the dexterity dropdown
     			Then the player sees the dexterity dropdown menu
@@ -91,7 +141,18 @@ Feature: All functionality of the dashboard
     @openConMenu
     Scenario: Click the constitution dropdown
     When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the constitution dropdown
     			Then the player sees the constitution dropdown menu
@@ -99,7 +160,18 @@ Feature: All functionality of the dashboard
     @openIntMenu
     Scenario: Click the intelligence dropdown
     When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the intelligence dropdown
     			Then the player sees the intelligence dropdown menu
@@ -107,7 +179,18 @@ Feature: All functionality of the dashboard
     @openWisMenu
     Scenario: Click the wisdom dropdown
     When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the wisdom dropdown
     			Then the player sees the wisdom dropdown menu
@@ -115,7 +198,18 @@ Feature: All functionality of the dashboard
     @openCharMenu
     Scenario: Click the charisma dropdown
     When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the charisma dropdown
     			Then the player sees the charisma dropdown menu
@@ -123,7 +217,18 @@ Feature: All functionality of the dashboard
     @inputStr
     Scenario: Input strength information
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the strength dropdown
     		And the player inputs a strength score
@@ -132,16 +237,38 @@ Feature: All functionality of the dashboard
     @checkAth
     Scenario: Check athletics box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the strength dropdown
     		And the player checks the athletics box
-    			Then the athetics box is checked in the form
+    			Then the athletics box is checked in the form
     
     @inputDex
     Scenario: Input dexterity information
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the dexterity dropdown
     		And the player inputs a dexterity score
@@ -150,7 +277,18 @@ Feature: All functionality of the dashboard
     @checkAcro
     Scenario: Check acrobatics box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the dexterity dropdown
     		And the player checks the acrobatics box
@@ -159,7 +297,18 @@ Feature: All functionality of the dashboard
     @checkSleight
     Scenario: Check sleight of hand box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the dexterity dropdown
     		And the player checks the sleight of hand box
@@ -168,7 +317,18 @@ Feature: All functionality of the dashboard
     @checkStealth
     Scenario: Check stealth box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the dexterity dropdown
     		And the player checks the stealth box
@@ -177,16 +337,38 @@ Feature: All functionality of the dashboard
     @inputCon
     Scenario: Input constitution information
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the constitution dropdown
     		And the player inputs a constitution score
-    			Then the constitutioninformation is stored in the form
+    			Then the constitution information is stored in the form
     
     @inputInt
     Scenario: Input intelligence information
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the intelligence dropdown
     		And the player inputs an intelligence score
@@ -195,7 +377,18 @@ Feature: All functionality of the dashboard
     @checkArcana
     Scenario: Check arcana box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the intelligence dropdown
     		And the player checks the arcana box
@@ -204,7 +397,18 @@ Feature: All functionality of the dashboard
     @checkHist
     Scenario: Check history box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the intelligence dropdown
     		And the player checks the history box
@@ -213,7 +417,18 @@ Feature: All functionality of the dashboard
     @checkInvest
     Scenario: Check investigation box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the intelligence dropdown
     		And the player checks the investigation box
@@ -222,7 +437,18 @@ Feature: All functionality of the dashboard
     @checkNat
     Scenario: Check nature box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the intelligence dropdown
     		And the player checks the nature box
@@ -231,7 +457,18 @@ Feature: All functionality of the dashboard
     @checkRel
     Scenario: Check religion box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the intelligence dropdown
     		And the player checks the religion box
@@ -240,7 +477,18 @@ Feature: All functionality of the dashboard
     @inputWis
     Scenario: Input wisdom information
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the wisdom dropdown
     		And the player inputs a wisdom score
@@ -249,7 +497,18 @@ Feature: All functionality of the dashboard
     @checkAnim
     Scenario: Check animal handling box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the wisdom dropdown
     		And the player checks the animal handling box
@@ -258,7 +517,18 @@ Feature: All functionality of the dashboard
     @checkInsight
     Scenario: Check insight box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the wisdom dropdown
     		And the player checks the insight box
@@ -267,7 +537,18 @@ Feature: All functionality of the dashboard
     @checkMed
     Scenario: Check medicine box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the wisdom dropdown
     		And the player checks the medicine box
@@ -276,7 +557,18 @@ Feature: All functionality of the dashboard
     @checkPerc
     Scenario: Check perception box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the wisdom dropdown
     		And the player checks the perception box
@@ -285,7 +577,18 @@ Feature: All functionality of the dashboard
     @checkSurv
     Scenario: Check survival box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the wisdom dropdown
     		And the player checks the survival box
@@ -294,7 +597,18 @@ Feature: All functionality of the dashboard
     @inputChar
     Scenario: Input charisma information
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the charisma dropdown
     		And the player inputs a charisma score
@@ -303,7 +617,18 @@ Feature: All functionality of the dashboard
     @checkDec
     Scenario: Check deception box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the charisma dropdown
     		And the player checks the deception box
@@ -312,7 +637,18 @@ Feature: All functionality of the dashboard
     @checkInt
     Scenario: Check intimidation box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the charisma dropdown
     		And the player checks the intimidation box
@@ -321,7 +657,18 @@ Feature: All functionality of the dashboard
     @checkPerf
     Scenario: Check performance box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the charisma dropdown
     		And the player checks the performance box
@@ -330,7 +677,18 @@ Feature: All functionality of the dashboard
     @checkPers
     Scenario: Check persuasion box
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the charisma dropdown
     		And the player checks the persuasion box
@@ -339,7 +697,18 @@ Feature: All functionality of the dashboard
     @navAbilitiesToGameplay
     Scenario: Navigate to the gameplay menu
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the previous button from abilities
     			Then the player sees the gameplay menu
@@ -347,16 +716,66 @@ Feature: All functionality of the dashboard
     @navAbilitiesToActions
     Scenario: Navigate to the gameplay menu
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     			Then the player sees the actions menu
     
     @inputAction
     Scenario: The player inputs an action
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player inputs action information
     		And the player clicks the add action button
@@ -365,8 +784,33 @@ Feature: All functionality of the dashboard
     @navActionsToAbilities
     Scenario: Navigate to the abilities menu
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the previous button from actions
     			Then the player sees the abilities menu
@@ -374,8 +818,33 @@ Feature: All functionality of the dashboard
     @navActionsToTraits
     Scenario: Navigate to the traits menu
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the next button from actions
     			Then the player sees the traits menu
@@ -383,8 +852,33 @@ Feature: All functionality of the dashboard
     @inputPersonality
     Scenario: The player inputs a personality
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the next button from actions
     		And the player inputs personality information
@@ -394,8 +888,33 @@ Feature: All functionality of the dashboard
     @inputBond
     Scenario: The player inputs a bond
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the next button from actions
     		And the player inputs bond information
@@ -405,8 +924,33 @@ Feature: All functionality of the dashboard
     @navTraitsToActions
     Scenario: Navigate to the actions menu
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the next button from actions
     		And the player clicks the previous button from traits
@@ -415,8 +959,33 @@ Feature: All functionality of the dashboard
     @navTraitsToTraits2
     Scenario: Navigate to the second traits menu
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the next button from actions
     		And the player clicks the next button from traits
@@ -425,8 +994,33 @@ Feature: All functionality of the dashboard
     @inputIdeal
     Scenario: The player inputs an ideal
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the next button from actions
     		And the player clicks the next button from traits
@@ -437,8 +1031,33 @@ Feature: All functionality of the dashboard
     @inputFlaw
     Scenario: The player inputs a flaw
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the next button from actions
     		And the player clicks the next button from traits
@@ -449,8 +1068,33 @@ Feature: All functionality of the dashboard
     @navTraits2ToTraits
     Scenario: Navigate to the traits menu
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the next button from actions
     		And the player clicks the next button from traits
@@ -460,8 +1104,33 @@ Feature: All functionality of the dashboard
     @navTraits2ToProficiency
     Scenario: Navigate to the proficiency menu
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the next button from actions
     		And the player clicks the next button from traits
@@ -471,8 +1140,33 @@ Feature: All functionality of the dashboard
     @inputProficiency
    	Scenario: The player inputs a proficiency
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the next button from actions
     		And the player clicks the next button from traits
@@ -484,8 +1178,33 @@ Feature: All functionality of the dashboard
     @navProficiencyToTraits2
     Scenario: Navigate to the second traits menu
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the next button from actions
     		And the player clicks the next button from traits
@@ -496,8 +1215,33 @@ Feature: All functionality of the dashboard
     @navProficiencyToFeats
     Scenario: Navigate to the feats menu
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the next button from actions
     		And the player clicks the next button from traits
@@ -508,8 +1252,33 @@ Feature: All functionality of the dashboard
     @inputFeat
     Scenario: The player inputs a feat
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the next button from actions
     		And the player clicks the next button from traits
@@ -522,8 +1291,33 @@ Feature: All functionality of the dashboard
     @navFeatsToProficiency
     Scenario: Navigate to the proficiency menu
     	When the player clicks the create character button
+    		And the player inputs a character name
+    		And the player inputs a player name
+    		And the player inputs a character race
+    		And the player inputs a class
+    		And the player inputs a level
+    		And the player inputs an alignment
     		And the player clicks the next button from basic
+    		And the player inputs an HP
+    		And the player inputs an AC
+    		And the player inputs a speed
+    		And the player inputs a hit dice
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
+    		And the player clicks the strength dropdown
+    		And the player inputs a strength score
+    		And the player clicks the dexterity dropdown
+    		And the player inputs a dexterity score
+    		And the player clicks the constitution dropdown
+    		And the player inputs a constitution score
+    		And the player clicks the intelligence dropdown
+    		And the player inputs an intelligence score
+    		And the player clicks the wisdom dropdown
+    		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
+    		And the player clicks the charisma dropdown
+    		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player clicks the next button from actions
     		And the player clicks the next button from traits
@@ -546,7 +1340,7 @@ Feature: All functionality of the dashboard
     		And the player inputs an AC
     		And the player inputs a speed
     		And the player inputs a hit dice
-    		And the player inputs a proficiency bonus
+    		And the player inputs a proficiency
     		And the player clicks the next button from gameplay
     		And the player clicks the strength dropdown
     		And the player inputs a strength score
@@ -558,12 +1352,14 @@ Feature: All functionality of the dashboard
     		And the player inputs an intelligence score
     		And the player clicks the wisdom dropdown
     		And the player inputs a wisdom score
+    		And the player clicks the constitution dropdown
     		And the player clicks the charisma dropdown
     		And the player inputs a charisma score
+    		And the player clicks the constitution dropdown
     		And the player clicks the next button from abilities
     		And the player inputs action information
-    		And the player player clicks the add action button
-    		And the player clicks the next utton from actions
+    		And the player clicks the add action button
+    		And the player clicks the next button from actions
     		And the player inputs personality information
     		And the player clicks the add personality button
     		And the player inputs bond information
