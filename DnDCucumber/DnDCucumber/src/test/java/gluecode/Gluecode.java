@@ -24,7 +24,7 @@ public class Gluecode {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		// Navigate to the home page
-		driver.get("http://localhost:4200/");
+		driver.get("http://54.146.173.34:8000/");
 	}
 	
 	@Given("the user is on the player dashboard")
@@ -32,7 +32,7 @@ public class Gluecode {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		// Navigate to the home page
-		driver.get("http://localhost:4200/dashboard");
+		driver.get("http://54.146.173.34:8000/dashboard");
 	}
 
 	@When("the player user inputs the correct username")
@@ -72,7 +72,7 @@ public class Gluecode {
 	
 	@Then("the user is sent to the dungeon master home page")
 	public void the_user_is_sent_to_the_manager_page() {
-		Assert.assertEquals("http://localhost:4200/dashboard", driver.getCurrentUrl());
+		Assert.assertEquals("http://54.146.173.34:8000/dashboard", driver.getCurrentUrl());
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -83,7 +83,7 @@ public class Gluecode {
 	
 	@Then("the user is forwarded to the login page")
 	public void the_user_is_redirected_to_the_login_page() {
-		Assert.assertEquals("http://localhost:4200/", driver.getCurrentUrl());
+		Assert.assertEquals("http://54.146.173.34:8000/", driver.getCurrentUrl());
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -112,7 +112,7 @@ public class Gluecode {
 	
 	@Then("I am redirected to the login page")
 	public void i_am_redirected_to_the_login_page() {
-		Assert.assertEquals("http://localhost:4200/", driver.getCurrentUrl());
+		Assert.assertEquals("http://54.146.173.34:8000/", driver.getCurrentUrl());
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -135,7 +135,7 @@ public class Gluecode {
 	
 	@Then("the user is sent to the character page")
 	public void the_user_is_sent_to_the_character_page() {
-		Assert.assertEquals("http://localhost:4200/character", driver.getCurrentUrl());
+		Assert.assertEquals("http://54.146.173.34:8000/character", driver.getCurrentUrl());
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
